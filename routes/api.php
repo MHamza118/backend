@@ -12,7 +12,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
+Route::get('/ping', function () {
+    return response()->json(['message' => 'pong'], 200);
+});
 // API V1 Routes
 Route::prefix('v1')->group(function () {
     // Authentication routes (public)
