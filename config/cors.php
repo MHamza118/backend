@@ -9,7 +9,7 @@ return [
     'allowed_origins' => [
         'https://woodfire.food',
         'https://www.woodfire.food',
-         ],
+     ],
 
     'allowed_origins_patterns' => [],
 
