@@ -309,7 +309,7 @@ class TableTrackingController extends Controller
     public function addOrder(Request $request): JsonResponse
     {
         $validator = Validator::make($request->all(), [
-            'order_number' => 'required|string|regex:/^[0-9]+$',
+            'order_number' => 'required|string|regex:/^[0-9]+$/',
             'customer_name' => 'nullable|string|max:255',
             'status' => 'nullable|string|in:' . implode(',', TableOrder::getValidStatuses())
         ]);
